@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     // Cambia la URL por la de tu backend en producción cuando lo despliegues
-    axios.get('http://127.0.0.1:8000/api/hello/')
+    axios.get('https://django-backend-lzrw.onrender.com/api/hello')
       .then(response => {
         setMessage(response.data.message);
       })
